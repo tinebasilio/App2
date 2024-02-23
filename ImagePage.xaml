@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.ImagePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Image Page!"
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand" />
+
+            <Image Source="image.jpg" 
+                   Aspect="AspectFill"
+                   HeightRequest="{OnPlatform iOS=300, Android=250}"/>
+
+            <Image Source="https://res.cloudinary.com/cloudinary-marketing/images/c_fill,w_700/f_auto,q_auto/v1649720751/Web_Assets/blog/Mario_1/Mario_1-gif?_i=AA" 
+                   IsAnimationPlaying="True"
+                   Aspect="AspectFit"
+                   HeightRequest="{OnPlatform iOS=300, Android=250}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
